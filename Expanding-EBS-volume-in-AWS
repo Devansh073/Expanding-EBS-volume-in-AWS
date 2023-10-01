@@ -1,0 +1,5 @@
+aws ec2 create-snapshot --volume-id your-volume-id --description "Snapshot for volume extension"
+aws ec2 modify-volume --volume-id your-volume-id --size desired-new-size
+lsblk
+sudo resize2fs /dev/xvdf
+df -h
